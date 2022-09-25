@@ -1,0 +1,73 @@
+body    {
+    font-family: Karla, sans-serif;
+    color: #484848;
+}
+
+nav ul  {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+header  {
+    background-color: #FF5A5F;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+}
+
+#logo   {
+    height: 80px;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 80px;
+}
+
+nav a   {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content        {
+    width: 900px;
+    margin: auto;
+}
+
+section{
+    padding: 32px;
+    border: 2px solid #dcdcdc;
+    margin-bottom: 32px;
+}
+
+section img {
+    width: 825px;
+}
+
+h1 {
+    font-size: 22px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+section p {
+    font-size: 16px;
+}
