@@ -14,11 +14,25 @@
 	left: 0;
 	border-radius: 50px;
 	/* TODO: PART 1.2 - Add pulse animation */
+	animation: pulse 3s infinite; 
 }
 
 /* TODO: PART 1.3 - Delay pulse animation for circle two */
+.loader.one .second.circle {
+	animation-delay: 0.2s;
+}
 
 /* TODO: PART 1.1 - Create pulse animation */
+@keyframes pulse {
+	from {
+		transform: scale(0);
+		opacity: 100%;
+	}
+	to {
+		transform: scale(1);
+		opacity: 0%;
+	}
+}
 
 /* Loader two: Wave */
 .loader.two {
@@ -36,18 +50,49 @@
 	border-radius: 15px;
 	background: #F76A4D;
 	/* TODO: PART 2 - Add wave animation */
+	animation: wave 2s infinite;
 }
 
 /* TODO: PART 2 - Add delays and dot colors */
+.loader.two .second.dot {
+	background: #4DB1F7;
+	animation-delay: .25s;
+}
+.loader.two .third.dot {
+	background: #7DE76A;
+	animation-delay: .5s;
+}
 
 /* TODO: PART 2 - Create wave animation */
-
+@keyframes wave {
+	0% { margin-bottom: 0px; }
+	50% { margin-bottom: 100px; }
+	100% { margin-bottom: 0px; }
+}
 /* Loader three: Flip */
 /* TODO: PART 3 - Style the flip card */
+.loader.three {
+	width: 100px;
+	height: 100px;
+}
+.loader.three .flip-tile {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background: #c27d70;
+	top: 0px;
+	left: 0px;
+	animation: flip 2.6s infinite;
+}
 
 /* TODO: PART 3 - Add flip animation to flip card */
 
 /* TODO: PART 3 - Write flip animation */
+@keyframes flip {
+	0% { transform: perspective(300px) }
+	50% { transform: perspective(300px) rotateY(180deg); }
+	100% { transform: perspective(300px) rotateY(180deg) rotateX(180deg); }
+}
 
 /* Loader four: Spin */
 .loader.four .rings {
